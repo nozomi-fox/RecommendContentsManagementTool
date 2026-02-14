@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>recommendMusicManagementTool</title>
+		<link th:href="@{/RMMT.css}" rel="stylesheet">
+	</head>
+	<body> 
+		<form th:action="@{/addMusic}" method="post">
+			<input type="text" name="title">
+			<input type="text" name="artist">
+			<input type="text" name="url">
+			<input type="text" name="friend">
+			<button type="submit">追加</button>
+		</form>
+		<table>
+			<tr>
+				<td>タイトル</td>
+				<td>作者</td>
+				<td>URL</td>
+				<td>おすすめした人</td>
+				<td>日付</td>
+				<td>コメント</td>
+				<td>評価(5段階)</td>
+				
+			</tr>
+				<tr th:each="item:${RMMT}">
+					<td th:text="${item.title}"></td>
+					<td th:text="${item.artist}"></td>
+					<td><a th:href="@{${item.url}}"th:text="${item.url}"target ="_blank"></a></td>
+					<td th:text="${item.recommendFriend}"></td>
+					<td th:text="${item.addDate}"></td>
+					<td th:text="${item.comment}"></td>
+					<td th:text="${item.evaluation}"></td>
+					<td>
+						<form th:action="@{/addReview/{id}(id=${item.id})}" method="post">
+							<input type="text" name="comment">
+							<select name="evaluation"size="0">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+							<button type="submit">送信</button>
+						</form>
+					</td>
+					<td>
+						<form th:action="@{/delete/{id}(id=${item.id})}"method="post">
+							<button type="submit">削除</button>
+						</form>
+					</td>
+				</tr>
+		</table>
+	</body>
+</html>
