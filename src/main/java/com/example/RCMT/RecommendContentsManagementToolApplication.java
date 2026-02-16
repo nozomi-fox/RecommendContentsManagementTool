@@ -1,13 +1,13 @@
-package com.example.RMMT;
+package com.example.RCMT;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RecommendMusicManagementToolApplication {
+public class RecommendContentsManagementToolApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RecommendMusicManagementToolApplication.class, args);
+		SpringApplication.run(RecommendContentsManagementToolApplication.class, args);
 	}
 
 }

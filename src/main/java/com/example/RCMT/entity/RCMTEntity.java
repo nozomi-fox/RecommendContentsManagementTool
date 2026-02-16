@@ -1,4 +1,4 @@
-package com.example.RMMT.entity;
+package com.example.RCMT.entity;
 
 import java.time.LocalDateTime;
 
@@ -11,7 +11,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "music")
-public class RMMTEntity {
+public class RCMTEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;

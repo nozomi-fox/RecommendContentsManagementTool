@@ -1,58 +1,58 @@
 
-body {
-    background-color: #3498db; /* 画像のような鮮やかな青 */
-    font-family: sans-serif;
-    margin: 0;
-    padding: 20px;
-    color: #333;
-}
+/*body {*/
+/*    background-color: #3498db;  画像のような鮮やかな青 */
+/*    font-family: sans-serif;*/
+/*    margin: 0;*/
+/*    padding: 20px;*/
+/*    color: #333;*/
+/*}*/
 
-.container { max-width: 1000px; margin: 0 auto; }
-h1 { text-align: center; color: white; margin-bottom: 20px; }
+/*.container { max-width: 1000px; margin: 0 auto; }*/
+/*h1 { text-align: center; color: white; margin-bottom: 20px; }*/
 
 /* 各アイテムのカードレイアウト (CSS Grid) */
-.music-item {
-    display: grid;
-    /* 1列目, 2列目, 3列目, ボタン列 */
-    grid-template-columns: 1fr 1fr 1fr 100px; 
-    gap: 8px;
-    background-color: #2980b9; /* 少し濃い青 */
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    align-items: center;
-}
+/*.music-item {*/
+/*    display: grid;*/
+/*     1列目, 2列目, 3列目, ボタン列 */
+/*    grid-template-columns: 1fr 1fr 1fr 100px; */
+/*    gap: 8px;*/
+/*    background-color: #2980b9;  少し濃い青 */
+/*    padding: 15px;*/
+/*    margin-bottom: 10px;*/
+/*    border-radius: 4px;*/
+/*    align-items: center;*/
+/*}*/
 
 /* 入力欄の共通スタイル */
-input, select {
-    padding: 8px;
-    border: none;
-    border-radius: 2px;
-    width: 100%;
-    box-sizing: border-box;
-}
+/*input, select {*/
+/*    padding: 8px;*/
+/*    border: none;*/
+/*    border-radius: 2px;*/
+/*    width: 100%;*/
+/*    box-sizing: border-box;*/
+/*}*/
 
 /* URL欄を2列分つなげる設定 */
-.url-field { grid-column: span 2; }
+/*.url-field { grid-column: span 2; }*/
 
 /* ボタンのスタイル */
-button {
-    cursor: pointer;
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 8px;
-    font-weight: bold;
-    height: 100%;
-}
-button:hover { background-color: #eee; }
+/*button {*/
+/*    cursor: pointer;*/
+/*    background-color: white;*/
+/*    border: 1px solid #ccc;*/
+/*    padding: 8px;*/
+/*    font-weight: bold;*/
+/*    height: 100%;*/
+/*}*/
+/*button:hover { background-color: #eee; }*/
 
 /* 削除ボタン用 */
-.delete-btn { background-color: #e74c3c; color: white; border: none; }
+/*.delete-btn { background-color: #e74c3c; color: white; border: none; }*/
 
 /* 下部の新規登録フォーム */
-.footer-form {
-    background-color: #85c1e9;
-    padding: 20px;
-    margin-top: 30px;
-    border-top: 5px solid #7f8c8d;
-}
+/*.footer-form {*/
+/*    background-color: #85c1e9;*/
+/*    padding: 20px;*/
+/*    margin-top: 30px;*/
+/*    border-top: 5px solid #7f8c8d;*/
+/*}*/

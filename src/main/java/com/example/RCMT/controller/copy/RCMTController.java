@@ -1,4 +1,4 @@
-package com.example.RMMT.controller;
+package com.example.RCMT.controller.copy;
 
 import java.util.List;
 
@@ -10,20 +10,20 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.example.RMMT.entity.RMMTEntity;
-import com.example.RMMT.service.RMMTService;
+import com.example.RCMT.entity.RCMTEntity;
+import com.example.RCMT.service.RCMTService;
 
 
 @Controller
-public class RMMTController {
+public class RCMTController {
 	@Autowired
-	private RMMTService service;
+	private RCMTService service;
 	
 	@GetMapping("/")
 	public String index(Model model) {
-		List<RMMTEntity> list = service.findAll();
-		model.addAttribute("RMMT",list);
-		return "RMMT";
+		List<RCMTEntity> list = service.findAll();
+		model.addAttribute("RCMT",list);
+		return "RCMT";
 	}
 	@PostMapping("/addMusic")
 	public String addMusic(@RequestParam("title") String title,@RequestParam("artist") String artist,@RequestParam("url") String url,@RequestParam("friend")String friend) {
