@@ -1,58 +1,19 @@
-
-/*body {*/
-/*    background-color: #3498db;  画像のような鮮やかな青 */
-/*    font-family: sans-serif;*/
-/*    margin: 0;*/
-/*    padding: 20px;*/
-/*    color: #333;*/
-/*}*/
-
-/*.container { max-width: 1000px; margin: 0 auto; }*/
-/*h1 { text-align: center; color: white; margin-bottom: 20px; }*/
-
-/* 各アイテムのカードレイアウト (CSS Grid) */
-/*.music-item {*/
-/*    display: grid;*/
-/*     1列目, 2列目, 3列目, ボタン列 */
-/*    grid-template-columns: 1fr 1fr 1fr 100px; */
-/*    gap: 8px;*/
-/*    background-color: #2980b9;  少し濃い青 */
-/*    padding: 15px;*/
-/*    margin-bottom: 10px;*/
-/*    border-radius: 4px;*/
-/*    align-items: center;*/
-/*}*/
-
-/* 入力欄の共通スタイル */
-/*input, select {*/
-/*    padding: 8px;*/
-/*    border: none;*/
-/*    border-radius: 2px;*/
-/*    width: 100%;*/
-/*    box-sizing: border-box;*/
-/*}*/
-
-/* URL欄を2列分つなげる設定 */
-/*.url-field { grid-column: span 2; }*/
-
-/* ボタンのスタイル */
-/*button {*/
-/*    cursor: pointer;*/
-/*    background-color: white;*/
-/*    border: 1px solid #ccc;*/
-/*    padding: 8px;*/
-/*    font-weight: bold;*/
-/*    height: 100%;*/
-/*}*/
-/*button:hover { background-color: #eee; }*/
-
-/* 削除ボタン用 */
-/*.delete-btn { background-color: #e74c3c; color: white; border: none; }*/
-
-/* 下部の新規登録フォーム */
-/*.footer-form {*/
-/*    background-color: #85c1e9;*/
-/*    padding: 20px;*/
-/*    margin-top: 30px;*/
-/*    border-top: 5px solid #7f8c8d;*/
-/*}*/
+body{
+	background-color: aliceblue;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+/*	justify-content: center;*/
+	min-height: 100vh;
+	margin: 0;
+}
+header{
+/*	position: fixed;*/
+}
+footer {
+    position: fixed;
+    bottom: 5%;      /* 下からの位置 */
+    left: 50%;       /* 画面の左から50%の位置に移動 */
+    transform: translateX(-50%); /* 自分の幅の半分だけ左に戻す（これでピッタリ中央！） */
+    
+}

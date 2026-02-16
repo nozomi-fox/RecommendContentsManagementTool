@@ -3,16 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>recommendMusicManagementTool</title>
-		<link th:href="@{/RMMT.css}" rel="stylesheet">
+		<link th:href="@{/RCMT.css}" rel="stylesheet">
 	</head>
 	<body> 
-		<form th:action="@{/addMusic}" method="post">
-			<input type="text" name="title">
-			<input type="text" name="artist">
-			<input type="text" name="url">
-			<input type="text" name="friend">
-			<button type="submit">追加</button>
-		</form>
+		<header>
+			<h1>RecommendContentsManagementTool</h1>
+		</header>
+
 		<table>
 			<tr>
 				<td>タイトル</td>
@@ -24,7 +21,7 @@
 				<td>評価(5段階)</td>
 				
 			</tr>
-				<tr th:each="item:${RMMT}">
+				<tr th:each="item:${RCMT}">
 					<td th:text="${item.title}"></td>
 					<td th:text="${item.artist}"></td>
 					<td><a th:href="@{${item.url}}"th:text="${item.url}"target ="_blank"></a></td>
@@ -52,5 +49,24 @@
 					</td>
 				</tr>
 		</table>
+		<footer>
+			<table>
+				<tr>
+					<td>タイトル</td>
+					<td>作者</td>
+					<td>URL</td>
+					<td>おすすめした人</td>
+				</tr>
+				<tr>
+					<form th:action="@{/addMusic}" method="post">
+					<td><input type="text" name="title"></td>
+					<td><input type="text" name="artist"></td>
+					<td><input type="text" name="url"></td>
+					<td><input type="text" name="friend"></td>
+					<td><button type="submit">追加</button></td>
+					</form>					
+				</tr>
+			</table>
+		</footer>
 	</body>
 </html>
